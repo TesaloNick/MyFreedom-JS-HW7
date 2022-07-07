@@ -47,6 +47,7 @@
 // const arr3 = (arr1, arr2) => (arr1.length > arr2.length) ? isEmpty(arr1, arr2) : isEmpty(arr2, arr1)
 // console.log(arr3(arr1, arr2)); // [5,7,9,4,5]
 
+
 // 1. Описать в html тег input и тег ul. По нажатию на клавишу в инпуте в список ul должен добавляться элемент li. Содержимое li - нажатая клавиша
 // const formTask1 = document.querySelector('.form-task1')
 const inputTask1 = document.querySelector('.input-task1')
@@ -121,6 +122,5 @@ buttonTask5.addEventListener('mouseenter', () => {
 })
 buttonTask5.addEventListener('mouseleave', () => {
   const deg = Math.floor(Math.random() * 360) - 180
-  console.log(deg);
   buttonTask5.style.transform = `rotate(${deg}deg)`
 })
