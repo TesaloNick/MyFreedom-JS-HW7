@@ -82,45 +82,45 @@ formTask3.addEventListener('submit', (event) => {
 })
 
 // 4*. Калькулятор 2.0. Создать в html форму с текстовым input, тегом select, вторым текстовым input и кнопкой. Добавить в html div. Опции select - арифметические знаки. В оба инпута пользователь вводит число. Когда пользователь отправляет форму, над двумя числами выполняется действие, выбранное в select. Результат отображается в div. Делать можно как с eval, так и с if-else.
-// const formTask4 = document.querySelector('.form-task4')
-// const inputTask4_1 = document.querySelector('.input-task4_1')
-// const inputTask4_2 = document.querySelector('.input-task4_2')
-// const buttonTask4 = document.querySelector('.button-task4')
-// const selectTask4 = document.querySelector('.select-task4')
-// const divTask4 = document.querySelector('.div-task4')
-// function selectSign(option) {
-//   switch (option) {
-//     case '+':
-//       return +inputTask4_1.value + +inputTask4_2.value
-//       break;
-//     case '-':
-//       return +inputTask4_1.value - +inputTask4_2.value
-//       break;
-//     case '*':
-//       return +inputTask4_1.value * +inputTask4_2.value
-//       break;
-//     case '/':
-//       return +inputTask4_1.value / +inputTask4_2.value
-//       break;
-//     default:
-//       break;
-//   }
-// }
-// formTask4.addEventListener('submit', (event) => {
-//   event.preventDefault()
-//   divTask4.innerHTML = selectSign(selectTask4.value)
-// })
+const formTask4 = document.querySelector('.form-task4')
+const inputTask4_1 = document.querySelector('.input-task4_1')
+const inputTask4_2 = document.querySelector('.input-task4_2')
+const buttonTask4 = document.querySelector('.button-task4')
+const selectTask4 = document.querySelector('.select-task4')
+const divTask4 = document.querySelector('.div-task4')
+function selectSign(option) {
+  switch (option) {
+    case '+':
+      return +inputTask4_1.value + +inputTask4_2.value
+      break;
+    case '-':
+      return +inputTask4_1.value - +inputTask4_2.value
+      break;
+    case '*':
+      return +inputTask4_1.value * +inputTask4_2.value
+      break;
+    case '/':
+      return +inputTask4_1.value / +inputTask4_2.value
+      break;
+    default:
+      break;
+  }
+}
+formTask4.addEventListener('submit', (event) => {
+  event.preventDefault()
+  divTask4.innerHTML = selectSign(selectTask4.value)
+})
 
 // 5*. Вставить в разметку html тег button без js (просто предусмотреть в разметке). При наведении на кнопку изменять ее цвет каждый раз рандомным цветом. При выведении мышки за пределы кнопки, поворачивать кнопку на рандомный угол от -180 до 180 градусов. Использовать обработку событий mouseenter, mouseleave на этой кнопке.
-// const buttonTask5 = document.querySelector('.button-task5')
-// buttonTask5.addEventListener('mouseenter', () => {
-//   const red = Math.floor(Math.random() * 255)
-//   const green = Math.floor(Math.random() * 255)
-//   const blue = Math.floor(Math.random() * 255)
-//   buttonTask5.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
-// })
-// buttonTask5.addEventListener('mouseleave', () => {
-//   const deg = Math.floor(Math.random() * 360) - 180
-//   console.log(deg);
-//   buttonTask5.style.transform = `rotate(${deg}deg)`
-// })
+const buttonTask5 = document.querySelector('.button-task5')
+buttonTask5.addEventListener('mouseenter', () => {
+  const red = Math.floor(Math.random() * 255)
+  const green = Math.floor(Math.random() * 255)
+  const blue = Math.floor(Math.random() * 255)
+  buttonTask5.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
+})
+buttonTask5.addEventListener('mouseleave', () => {
+  const deg = Math.floor(Math.random() * 360) - 180
+  console.log(deg);
+  buttonTask5.style.transform = `rotate(${deg}deg)`
+})
