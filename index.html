@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5-6</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <div class="task1">
+    <h1>Задание 1</h1>
+    <p>Описать в html тег input и тег ul. По нажатию на клавишу в инпуте в список ul должен добавляться элемент li.
+      Содержимое li - нажатая клавиша</p>
+    <!-- <form class="form-task1"> -->
+    <input type="text" class="input-task1">
+    <!-- </form> -->
+    <ul class="ul-task1"></ul>
+  </div>
+
+  <div class="task2">
+    <h1>Задание 2</h1>
+    <p>Вставить в разметку html теги input и div без js (просто предусмотреть в разметке). Обрабатывая событие keyup на
+      теге input, выводить в консоль введенный текст каждый раз, как только клиент вписывает любой символ в поле (или
+      стирает любой символ из поля). </p>
+    <p> Каждый раз при изменении данных в инпуте, в предусмотренный div должна
+      вписываться фраза "Клиент набирает: ВСЕ_ЧТО_НАБРАНО_В_ИНПУТЕ".</p>
+    <form class="form-task2">
+      <input type="text" class="input-task2">
+    </form>
+    <div class="div-task2"></div>
+  </div>
+
+  <div class="task3">
+    <h1>Задание 3</h1>
+    <p>Создать в html форму с инпутом и кнопкой. Также добавить в html тег ul. Когда форма отправляется, добавлять в
+      список тег li. Его содержимое - введенный текст. После отправки формы инпут должен быть очищен (проставить пустую
+      строку в value). Подсказки смотрите в последнем задании с предыдущего занятия в конспекте.</p>
+    <form class="form-task3">
+      <input type="text" class="input-task3">
+      <button class="button-task3">Добавить в список</button>
+    </form>
+    <ul class="ul-task3"></ul>
+  </div>
+
+  <div class="task4">
+    <h1>Задание 4</h1>
+    <p>Калькулятор 2.0. Создать в html форму с текстовым input, тегом select, вторым текстовым input и кнопкой. Добавить
+      в html div. Опции select - арифметические знаки. В оба инпута пользователь вводит число. Когда пользователь
+      отправляет форму, над двумя числами выполняется действие, выбранное в select. Результат отображается в div. Делать
+      можно как с eval, так и с if-else.</p>
+    <form class="form-task4">
+      <input type="text" class="input-task4_1">
+      <select class="select-task4">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="text" class="input-task4_2">
+      <button class="button-task4">Рассчитать</button>
+    </form>
+    <div class="div-task4"></div>
+  </div>
+
+  <div class="task5">
+    <h1>Задание 5</h1>
+    <p>Вставить в разметку html тег button без js (просто предусмотреть в разметке). При наведении на кнопку изменять ее
+      цвет каждый раз рандомным цветом. При выведении мышки за пределы кнопки, поворачивать кнопку на рандомный угол от
+      -180 до 180 градусов. Использовать обработку событий mouseenter, mouseleave на этой кнопке.</p>
+    <button class="button-task5" style="width: 200px; height: 50px">Crazy-button</button>
+  </div>
+</body>
+
+</html>
